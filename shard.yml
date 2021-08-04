@@ -1,0 +1,15 @@
+name: crpty
+version: 0.1.0
+
+authors:
+  - Federico Tedin <federicotedin@gmail.com>
+
+crystal: 1.1.1
+
+libraries:
+  constants: "*"
+
+scripts:
+  postinstall: cd src && gcc -Wall -c constants.c
+
+license: MIT
